@@ -99,6 +99,7 @@ const validateEmail = (email) => {
 
 
 
+
 function OpenBurger() {
     $('.burger').addClass('active');
 }
