@@ -80,7 +80,6 @@ a {
 
 /* Основной хедер */
 .main-header {
-    content-visibility: auto;
     z-index: var(--ui-index-2);
     position: absolute;
     top: 0;
