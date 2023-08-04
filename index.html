@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/images/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/cb18628afa.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <title>Тестовое задание</title>
+</head>
+
+<body>
+
+    <div class="modal" data-modal="reserve">
+        <div class="modal__body">
+            <button class="modal-closer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul class="modal__list">
+                <li class="modal__item">
+                    <span class="modal__text">
+                        Name
+                    </span>
+                    <input type="text" inputmode="latin" class="modal__input" required placeholder="Name" id="name">
+                </li>
+                <li class="modal__item">
+                    <span class="modal__text">
+                        Email
+                    </span>
+                    <input type="email" inputmode="email" class="modal__input" placeholder="Email" id="email" required>
+                </li>
+            </ul>
+            <button class="modal__btn" type="submit">Reserve</button>
+        </div>
+
+    </div>
+
+    <header class="main-header">
+        <div class="center-container">
+            <div class="main-header__content">
+                <img src="assets/images/NAAM.png" alt="" class="main-header__img">
+                <button class="burger__btn" data-burger-action="open">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="main-header__element burger">
+                    <button class="burger__btn" data-burger-action="close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    À la carte
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Wijnkaart
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Lunchmenu
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="tel:+3292825725" class="link-phone main-header__phone">
+                        <svg class="icon-phone">
+                            <use xlink:href="assets/images/phone.svg#phone"></use>
+                        </svg>
+                        <span>+32 9 282 57 25</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="start">
+        <div class="start__img-wrapper noselect">
+            <picture>
+                <img src="assets/images/start.png" class="start__img" alt="">
+            </picture>
+        </div>
+        <div class="center-container">
+            <div class="start__content">
+                <p class="start__text" id="working-time">OPEN EVERYDAY 6AM - 9PM</p>
+                <p class="start__text" id="slogan">A bad day with lunch is better than a good day without it.</p>
+                <div class="start__row">
+                    <button class="start__btn modal-opener" data-modal="reserve">Reserve a table</button>
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                Fb
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                lg
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                Tw
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                Yt
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="weekly-menu">
+        <div class="center-container">
+            <div class="weekly-menu__content">
+                <div class="weekly-menu__column">
+                    <ul class="weekly-menu__list">
+                        <li class="weekly-menu__item">
+                            <span class="weekly-menu__date">
+                                Woensdag 12/01
+                            </span>
+                            <div class="weekly-menu__text">
+                                <span>Salade met Serrano</span>
+                                <div class="weekly-menu__dots dots">
+                                    <span class="dots__dot"></span>
+                                    <span class="dots__dot"></span>
+                                    <span class="dots__dot"></span>
+                                </div>
+                                <span>Steak Tartaar</span>
+                            </div>
+                        </li>
+                        <li class="weekly-menu__item">
+                            <span class="weekly-menu__date">
+                                Donderdag 13/01
+                            </span>
+                            <div class="weekly-menu__text">
+                                <span>Toast Roquefort</span>
+                                <div class="weekly-menu__dots dots">
+                                    <span class="dots__dot"></span>
+                                    <span class="dots__dot"></span>
+                                    <span class="dots__dot"></span>
+                                </div>
+                                <span>Penne met Kip en Prei</span>
+                            </div>
+                        </li>
+                        <li class="weekly-menu__item">
+                            <span class="weekly-menu__date">
+                                Vrijdag 14/01
+                            </span>
+                            <div class="weekly-menu__text">
+                                <span>Verrassing van de Chef</span>
+                                <div class="weekly-menu__dots dots">
+                                    <span class="dots__dot"></span>
+                                    <span class="dots__dot"></span>
+                                    <span class="dots__dot"></span>
+                                </div>
+                                <span>Penne met Kip en Prei</span>
+                            </div>
+                        </li>
+                        <li class="weekly-menu__item">
+                            <span class="weekly-menu__date">
+                                Vrijdag 15/01
+
+                            </span>
+                            <div class="weekly-menu__text">
+                                <span>Verrassing van de Chef</span>
+                                <div class="weekly-menu__dots dots">
+                                    <span class="dots__dot"></span>
+                                    <span class="dots__dot"></span>
+                                    <span class="dots__dot"></span>
+                                </div>
+                                <span>Penne met Kip en Prei</span>
+                            </div>
+                        </li>
+                        <li class="weekly-menu__item">
+                            <span class="weekly-menu__date">
+                                Vrijdag 16/01
+
+                            </span>
+                            <div class="weekly-menu__text">
+                                <span>Verrassing van de Chef</span>
+                                <div class="weekly-menu__dots dots">
+                                    <span class="dots__dot"></span>
+                                    <span class="dots__dot"></span>
+                                    <span class="dots__dot"></span>
+                                </div>
+                                <span>Penne met Kip en Prei</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="weekly-menu__column">
+                    <div class="weekly-menu__picture">
+                        <picture>
+                            <img class="weekly-menu__img" src="assets/images/weekly1.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="weekly-menu__picture">
+                        <picture>
+                            <img class="weekly-menu__img" src="assets/images/weekly2.png" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="review">
+        <div class="center-container">
+            <div class="review__content">
+                <div class="swiper review__swiper">
+                    <div class="swiper-wrapper review__wrapper">
+                        <div class="swiper-slide review__slide">
+                            <p class="review__head">
+                                Goede service, lekker eten, toffe ambiance
+                            </p>
+                            <p class="review__body">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque suscipit culpa delectus
+                                ab
+                                ea. Optio consequuntur sint, maxime nulla natus voluptatibus, ipsum eius vero esse
+                                eligendi
+                                qui? Incidunt, mollitia atque?
+                            </p>
+                            <p class="review__footer">
+                                ALAIN HEYNDRICKX
+                            </p>
+                        </div>
+                        <div class="swiper-slide review__slide">
+                            <p class="review__head">
+                                Goede service, lekker eten, toffe ambiance
+                            </p>
+                            <p class="review__body">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque suscipit culpa delectus
+                                ab
+                                ea. Optio consequuntur sint, maxime nulla natus voluptatibus, ipsum eius vero esse
+                                eligendi
+                                qui? Incidunt, mollitia atque?
+                            </p>
+                            <p class="review__footer">
+                                ALAIN HEYNDRICKX
+                            </p>
+                        </div>
+                        <div class="swiper-slide review__slide">
+                            <p class="review__head">
+                                Goede service, lekker eten, toffe ambiance
+                            </p>
+                            <p class="review__body">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque suscipit culpa delectus
+                                ab
+                                ea. Optio consequuntur sint, maxime nulla natus voluptatibus, ipsum eius vero esse
+                                eligendi
+                                qui? Incidunt, mollitia atque?
+                            </p>
+                            <p class="review__footer">
+                                ALAIN HEYNDRICKX
+                            </p>
+                        </div>
+                        <div class="swiper-slide review__slide">
+                            <p class="review__head">
+                                Goede service, lekker eten, toffe ambiance
+                            </p>
+                            <p class="review__body">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque suscipit culpa delectus
+                                ab
+                                ea. Optio consequuntur sint, maxime nulla natus voluptatibus, ipsum eius vero esse
+                                eligendi
+                                qui? Incidunt, mollitia atque?
+                            </p>
+                            <p class="review__footer">
+                                ALAIN HEYNDRICKX
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper__btn-wrapper">
+                        <div class="review__btn review__btn_prev">
+                            <svg class="icon-arrow">
+                                <use xlink:href="assets/images/arrow-left.svg#arrow-left"></use>
+                            </svg>
+                        </div>
+                        <div class="review__btn review__btn_next">
+                            <svg class="icon-arrow">
+                                <use xlink:href="assets/images/arrow-right.svg#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+        type="text/javascript"></script>
+    <script src="assets/scripts/app.js"></script>
+</body>
+
+</html>
