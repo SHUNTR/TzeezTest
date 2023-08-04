@@ -49,6 +49,11 @@ body {
     position: relative;
 }
 
+body,
+html {
+    scrollbar-gutter: stable;
+}
+
 body.scrolllock {
     overflow: hidden;
 }
@@ -75,6 +80,7 @@ a {
 
 /* Основной хедер */
 .main-header {
+    content-visibility: auto;
     z-index: var(--ui-index-2);
     position: absolute;
     top: 0;
@@ -155,6 +161,7 @@ a {
 
 /* start */
 .start {
+    content-visibility: auto;
     height: 900px;
     display: flex;
     align-items: center;
